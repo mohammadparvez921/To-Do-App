@@ -129,3 +129,16 @@ for (let i = 0; i < toolBoxColors.length; i++){
     })
 }
 
+//on clicking removeBtn, make color red and amke color white in clicking again
+let removeBtnActive=false;
+removeBtn.addEventListener("click",function(){
+  if(removeBtnActive){
+    removeBtn.style.color="white";
+  }else{
+    removeBtn.style.color="red";
+  }
+  removeBtnActive=!removeBtnActive;
+})
+
+
+
